@@ -1,28 +1,32 @@
+/* sass:scss */
 * {
-  
   box-sizing: border-box;
 }
+
 .root {
- margin: 0 auto;
- max-width: 130rem;
- 
+  margin: 0 auto;
+  max-width: 130rem;
 }
+
 html {
   font-size: 62.5%;
   font-family: Arial, Helvetica, sans-serif;
 }
+
 .navig {
   display: flex;
   justify-content: space-between;
   font-size: 1.1rem;
-  margin:0 19rem;
+  margin: 0 19rem;
   max-width: 130rem;
 }
+
 .logo {
-  font-weight:bolder;
+  font-weight: bolder;
   font-size: 2rem;
   margin-left: 6rem;
 }
+
 .links {
   display: flex;
   gap: 2rem;
@@ -30,7 +34,6 @@ html {
 
 header {
   border-bottom: 0.1rem solid lightgrey;
-  
 }
 
 .links li {
@@ -46,7 +49,6 @@ header {
   color: grey;
   text-decoration: none;
   text-transform: uppercase;
-
 }
 
 li.active {
@@ -57,16 +59,13 @@ li.active {
   padding-bottom: 1.3rem;
 }
 
-
 .about {
   max-width: 120rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
-
 }
+
 .img-container {
-  
-  
   width: 80rem;
   height: 50rem;
   max-width: 100%;
@@ -74,20 +73,15 @@ li.active {
 }
 
 #div2 {
-
   z-index: 2;
   position: absolute;
-
   top: 2rem;
   left: 38rem;
-
-
 }
 
 #div2 img {
   width: 30rem;
   height: 40rem;
-
 }
 
 #div4 {
@@ -103,15 +97,12 @@ li.active {
 }
 
 #div5 {
-
   z-index: 1;
   position: absolute;
   width: 15rem;
   height: 16rem;
   left: 55rem;
   background-color: tomato;
-
-
 }
 
 .about-desc {
@@ -119,37 +110,30 @@ li.active {
   flex-direction: column;
   margin-left: -2rem;
   max-width: 120rem;
-  gap:1rem;
+  gap: 1rem;
   line-height: 2rem;
 }
 
-.about-desc {
- 
- .title {
-
+.about-desc .title {
   margin-top: 7rem;
   font-size: 2.9rem;
   font-weight: bolder;
- }
- .subtitle {
+}
+.about-desc .subtitle {
   font-size: 1.6rem;
   color: grey;
- }
 }
 
 .icons {
   display: flex;
   gap: 1rem;
- 
 }
 
 .icon {
   border: 0.1rem solid lightgrey;
   border-radius: 50%;
   color: black;
-
   font-weight: bold;
-
   z-index: 1;
   font-size: 1.3rem;
   padding: 1rem 1.5rem;
@@ -163,27 +147,28 @@ li.active {
   font-size: 1.5rem;
   color: rgb(102, 100, 100);
   max-width: 100rem;
-  
 }
 
 .info ul:nth-child(1) {
-font-weight: bolder;
+  font-weight: bolder;
 }
+
 .info ul:nth-child(3) {
   font-weight: bolder;
-  }
+}
 
 .info ul:nth-child(2) {
   margin-left: -4rem;
 }
+
 li {
   list-style-type: none;
 }
 
+.list2 li:nth-child(3) {
+  font-size: smaller;
+}
 
-  .list2 li:nth-child(3) {
-   font-size: smaller;
-    }
 .info ul:nth-child(4) {
   margin-left: -3rem;
 }
@@ -191,18 +176,18 @@ li {
 .list4 li:nth-child(2) {
   margin-left: -2rem;
 }
+
 .list4 li:nth-child(3) {
   margin-left: -3rem;
 }
-
 
 /* works */
 .work {
   max-width: 130rem;
   display: grid;
   grid-template-rows: 1fr;
-
 }
+
 .navig-work {
   display: flex;
   justify-content: center;
@@ -210,29 +195,30 @@ li {
   margin-bottom: 3rem;
   border-bottom: 0.1rem solid lightgrey;
   margin-left: 30rem;
-margin-right: 16rem;
+  margin-right: 16rem;
 }
+
 .navig-work li {
   text-transform: uppercase;
   font-size: 1.4rem;
   color: grey;
 }
+
 .works-container {
-display: grid;
-grid-template-columns: 1fr 1fr 1fr;
-margin-left: 30rem;
-margin-right: 15rem;
-gap: 1rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-left: 30rem;
+  margin-right: 15rem;
+  gap: 1rem;
 }
+
 .works-container img {
-height: 30rem;
-width: 27rem;
-
+  height: 30rem;
+  width: 27rem;
 }
 
-@media (max-width: 76.8rem){
-
-  .works-container{
+@media (max-width: 76.8rem) {
+  .works-container {
     grid-template-columns: 1fr 1fr;
   }
 }
@@ -252,7 +238,6 @@ width: 27rem;
   }
   .about {
     grid-template-columns: 1fr;
-   
   }
   .about-desc {
     margin-left: 2rem;
@@ -263,30 +248,26 @@ width: 27rem;
   .navig-work {
     flex-direction: column;
     align-items: center;
- 
   }
 }
-
 /*  services */
 .lead-container img {
   display: block;
 }
 
 .galery {
- display: grid;
- grid-template-columns: 1fr 1fr 1fr;
- padding-left: 26rem;
- padding-right: 21rem;
- gap: 1rem;
- max-width: 130rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding-left: 26rem;
+  padding-right: 21rem;
+  gap: 1rem;
+  max-width: 130rem;
 }
 
 .container {
   position: relative;
-
   max-width: 400px;
 }
-
 
 .container .btn {
   position: absolute;
@@ -297,7 +278,6 @@ width: 27rem;
   background-color: white;
   color: black;
   font-size: 13px;
-
   margin-top: 0px;
   border: none;
   cursor: pointer;
@@ -305,9 +285,7 @@ width: 27rem;
   width: 150px;
   padding-bottom: 25px;
   height: 20px;
-
 }
-
 
 .heading {
   text-transform: uppercase;
@@ -336,7 +314,6 @@ width: 27rem;
     grid-template-columns: 1fr 1fr;
   }
 }
-
 @media (max-width: 72.8rem) {
   .galery {
     grid-template-columns: 1fr;
@@ -352,21 +329,23 @@ width: 27rem;
   justify-content: center;
   text-align: center;
 }
+
 .contact h5 {
   text-transform: uppercase;
   color: grey;
 }
+
 .btn-contact {
   width: 100px;
   background-color: transparent;
   border: none;
-  
 }
+
 .btn-contact a {
   text-decoration: none;
   color: grey;
-  
 }
+
 button.active {
   border-bottom: 4px solid tomato;
 }
@@ -383,15 +362,11 @@ button.active {
   display: flex;
   flex-direction: column;
   width: 27rem;
-
-
-
 }
 
 .kartica {
   display: flex;
   flex-direction: column;
-
   z-index: 0;
 }
 
@@ -400,21 +375,23 @@ button.active {
   display: flex;
   flex-direction: column;
   align-items: center;
-
   height: 10rem;
   padding-top: 3rem;
   position: relative;
   border: 0.5px solid lightgrey;
   color: grey;
 }
-.kart-tekst a{
+
+.kart-tekst a {
   font-size: small;
   color: grey;
 }
+
 .kart-tekst p {
   font-weight: bold;
   color: black;
 }
+
 .icon-contact {
   position: relative;
   border: 0.1rem solid transparent;
@@ -433,7 +410,7 @@ button.active {
 }
 
 .icon-contact:hover {
-  box-shadow: 0px -1px 0px 9px rgba(253,180,169,1);
+  box-shadow: 0px -1px 0px 9px rgb(253, 180, 169);
 }
 
 @media (max-width: 80rem) {
@@ -446,9 +423,7 @@ button.active {
     grid-template-columns: 1fr;
   }
 }
-
 .forma {
-  
   max-width: 130rem;
   display: flex;
   justify-content: center;
@@ -456,7 +431,6 @@ button.active {
   padding-top: 1.3rem;
   text-align: center;
   margin-left: 6rem;
-
 }
 
 .forma h3 {
@@ -490,17 +464,14 @@ input {
 input[type=text] {
   width: 100%;
   padding: 10px 10px;
- 
   box-sizing: border-box;
   border: 0.5px solid lightgrey;
-
 }
 
 input[type=email] {
   width: 100%;
   padding: 10px 10px;
   box-sizing: border-box;
-  
 }
 
 .row {
@@ -508,25 +479,25 @@ input[type=email] {
   flex-direction: row;
   gap: 2rem;
 }
+
 .input-group {
-  flex:1;
+  flex: 1;
   display: flex;
   flex-direction: column;
-  
-}
-@media (max-width: 80rem) {
-.forma {
-  flex-direction: row;
-  align-items: center;
-  align-items: center;
-}
-.row {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
 }
 
+@media (max-width: 80rem) {
+  .forma {
+    flex-direction: row;
+    align-items: center;
+    align-items: center;
+  }
+  .row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
 .portfolio {
   color: rgb(196, 193, 193);
   text-transform: uppercase;
@@ -542,8 +513,10 @@ input[type=email] {
 
 .my-works:after {
   border-bottom: 3px solid tomato;
-  content: '';
+  content: "";
   display: block;
   margin-left: 25%;
   width: 50%;
 }
+
+/* endinject *//*# sourceMappingURL=main.css.map */
