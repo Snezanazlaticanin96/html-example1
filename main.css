@@ -3,22 +3,15 @@
   box-sizing: border-box;
 }
 
-.root {
-  margin: 0 auto;
-  max-width: 130rem;
-}
-
 html {
   font-size: 62.5%;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Urbanist", sans-serif;
 }
 
 .navig {
   display: flex;
+  font-size: 1.3rem;
   justify-content: space-between;
-  font-size: 1.1rem;
-  margin: 0 19rem;
-  max-width: 130rem;
 }
 
 .logo {
@@ -34,6 +27,9 @@ html {
 
 header {
   border-bottom: 0.1rem solid lightgrey;
+  padding-left: 22rem;
+  padding-right: 22rem;
+  background-color: white;
 }
 
 .links li {
@@ -140,6 +136,15 @@ li.active {
   background-color: white;
 }
 
+.icon a {
+  text-decoration: none;
+  color: grey;
+}
+
+.icon:hover {
+  box-shadow: 0px -1px 4px 1px rgb(255, 137, 116);
+}
+
 .info {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -181,21 +186,34 @@ li {
   margin-left: -3rem;
 }
 
+.list2 a {
+  color: grey;
+  font-weight: bold;
+}
+
+.list4 a {
+  color: grey;
+  font-weight: bold;
+}
+
 /* works */
 .work {
   max-width: 130rem;
-  display: grid;
-  grid-template-rows: 1fr;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 6%;
 }
 
 .navig-work {
+  width: 92rem;
+  padding-top: 4rem;
   display: flex;
   justify-content: center;
   gap: 1rem;
   margin-bottom: 3rem;
   border-bottom: 0.1rem solid lightgrey;
-  margin-left: 30rem;
-  margin-right: 16rem;
+  margin-left: 2rem;
 }
 
 .navig-work li {
@@ -207,14 +225,12 @@ li {
 .works-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  margin-left: 30rem;
-  margin-right: 15rem;
   gap: 1rem;
 }
 
 .works-container img {
   height: 30rem;
-  width: 27rem;
+  width: 30rem;
 }
 
 @media (max-width: 76.8rem) {
@@ -229,9 +245,15 @@ li {
   }
   .navig {
     flex-direction: column;
-    align-items: center;
-    margin: 0 auto;
     gap: 1rem;
+    margin-bottom: 3rem;
+    border-bottom: 0.1rem solid lightgrey;
+  }
+  .navig-work {
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 3rem;
+    border-bottom: 0.1rem solid lightgrey;
   }
   .links {
     flex-direction: column;
@@ -248,9 +270,16 @@ li {
   .navig-work {
     flex-direction: column;
     align-items: center;
+    margin: 0 16rem;
   }
 }
 /*  services */
+.services {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .lead-container img {
   display: block;
 }
@@ -262,11 +291,13 @@ li {
   padding-right: 21rem;
   gap: 1rem;
   max-width: 130rem;
+  padding-top: 1rem;
+  margin-right: 7rem;
 }
 
 .container {
   position: relative;
-  max-width: 400px;
+  width: 30rem;
 }
 
 .container .btn {
@@ -277,12 +308,12 @@ li {
   -ms-transform: translate(-50%, -50%);
   background-color: white;
   color: black;
-  font-size: 13px;
+  font-size: 1.3rem;
   margin-top: 0px;
   border: none;
   cursor: pointer;
   text-align: center;
-  width: 150px;
+  width: 13rem;
   padding-bottom: 25px;
   height: 20px;
 }
@@ -305,6 +336,17 @@ li {
   color: black;
 }
 
+.btn-services {
+  width: 12rem;
+  background-color: transparent;
+  border: none;
+}
+
+.btn-services a {
+  text-decoration: none;
+  color: grey;
+}
+
 .my-services a.active {
   border-bottom: 3px solid tomato;
 }
@@ -321,13 +363,11 @@ li {
 }
 /*contact*/
 .contact {
-  background-color: #f4f4f4;
-  max-width: 170rem;
-  margin: 0 auto;
-  padding: 0 20rem;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
+  margin: 0 auto;
 }
 
 .contact h5 {
@@ -336,7 +376,7 @@ li {
 }
 
 .btn-contact {
-  width: 100px;
+  width: 12rem;
   background-color: transparent;
   border: none;
 }
@@ -353,15 +393,16 @@ button.active {
 .kartice {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 2rem;
-  padding-left: 6rem;
-  max-width: 130rem;
+  max-width: 120rem;
+  padding: 0 10rem;
+  gap: 5rem;
+  margin-left: 7rem;
 }
 
 .kartica-container {
   display: flex;
   flex-direction: column;
-  width: 27rem;
+  width: 27.5rem;
 }
 
 .kartica {
@@ -409,6 +450,11 @@ button.active {
   padding-top: 1.4rem;
 }
 
+.getintouch {
+  margin-left: -80rem;
+  text-align: left;
+}
+
 .icon-contact:hover {
   box-shadow: 0px -1px 0px 9px rgb(253, 180, 169);
 }
@@ -423,14 +469,38 @@ button.active {
     grid-template-columns: 1fr;
   }
 }
+@media (max-width: 1280px) {
+  .kartica-container {
+    width: 24rem;
+  }
+  .getintouch {
+    right: 33%;
+  }
+}
+@media (max-width: 1029px) {
+  .contact {
+    display: flex;
+    justify-content: center;
+  }
+}
+@media (max-width: 1256px) {
+  .getintouch {
+    margin-left: -0.9rem;
+  }
+}
+@media (max-width: 543px) {
+  form {
+    margin-left: 20%;
+  }
+}
 .forma {
-  max-width: 130rem;
+  width: 65%;
   display: flex;
   justify-content: center;
   flex-direction: column;
   padding-top: 1.3rem;
   text-align: center;
-  margin-left: 6rem;
+  margin-left: 7rem;
 }
 
 .forma h3 {
@@ -489,8 +559,7 @@ input[type=email] {
 @media (max-width: 80rem) {
   .forma {
     flex-direction: row;
-    align-items: center;
-    align-items: center;
+    justify-content: center;
   }
   .row {
     display: flex;
@@ -504,14 +573,22 @@ input[type=email] {
   text-align: center;
 }
 
-.my-works {
+.btn-works {
   display: table;
   margin-left: auto;
   margin-right: auto;
   padding-bottom: 3rem;
+  background-color: transparent;
+  border: none;
+  font-size: 2rem;
 }
 
-.my-works:after {
+.btn-works a {
+  text-decoration: none;
+  color: black;
+}
+
+.btn-works:after {
   border-bottom: 3px solid tomato;
   content: "";
   display: block;
