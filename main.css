@@ -441,8 +441,8 @@ input[type=email] {
   display: flex;
   gap: 3rem;
   align-items: center;
+  padding-top: 5rem;
   width: 90rem;
-  padding-top: 1rem;
 }
 
 .container {
@@ -471,9 +471,13 @@ input[type=email] {
 .heading {
   text-transform: uppercase;
   text-align: center;
-  color: lightgrey;
-  padding: 10px 0px;
+  color: grey;
+  padding-top: 1.8rem;
+  padding-bottom: 2rem;
   width: 90rem;
+  font-weight: bold;
+  font-size: 0.9rem;
+  letter-spacing: 0.4rem;
 }
 
 .my-services {
@@ -579,10 +583,14 @@ input[type=email] {
 }
 
 .portfolio {
+  padding-top: 1.8rem;
+  padding-bottom: 2rem;
   text-align: center;
   text-transform: uppercase;
-  color: lightgray;
-  font-size: small;
+  color: grey;
+  font-size: 1rem;
+  letter-spacing: 0.4rem;
+  font-weight: bold;
 }
 
 @media (max-width: 76.8rem) {
@@ -594,6 +602,7 @@ input[type=email] {
   .works-container {
     grid-template-columns: 1fr;
     margin: 0 auto;
+    margin-left: 64rem;
   }
   .navig {
     flex-direction: column;
