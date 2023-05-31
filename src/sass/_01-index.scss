@@ -54,14 +54,15 @@ html {
   font-size: 22px;
   color: #212020;
   font-weight: 500;
-
+  
 }
 .container {
-  display: flex;
-  gap: 380px;
-  align-items: center;
-  margin: 0 120px;
-  
+display: flex;
+justify-content: space-between;
+
+align-items: center;
+padding-left: 200px;
+padding-right: 170px;
 }
 .navbar-nav {
   display: flex;
@@ -108,11 +109,10 @@ nav a {
 }
 
 .about-img-desc {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 30px;
-  margin-left: 200px;
-  margin-right: 200px;
+display: flex;
+justify-content: space-evenly;
+padding-left: 150px;
+padding-right: 180px;
 }
 .about-desc-info a {
   color: grey;
@@ -120,16 +120,19 @@ nav a {
 
 .row {
   display: flex;
-  justify-content: space-between;
+  gap: 100px;
   flex-wrap: wrap;
 }
 .col {
 line-height: 40px;
 color: rgb(82, 79, 79);
 }
-.about-desc {
-  padding-right: 30px;
 
+.designer {
+  font-weight: 400;
+}
+.class {
+  padding-right: 100px;
 }
 .about-desc-content p {
 color: grey;
@@ -143,6 +146,7 @@ padding-top: 20px;
   display: flex;
   gap: 15px;
   padding-top: 20px;
+  padding-bottom: 40px;
 }
 
 .icon {
@@ -166,51 +170,57 @@ padding-top: 20px;
   box-shadow: 2px 2px 5px 1px grey;
 }
 .about {
-  flex: 0 0 50%;
-      max-width: 50%;
+       
        padding-top: 43px;
 }
 @media (max-width: 1240px) {
-   .container {
-      flex-direction: column;
-      gap: 10px;
-     
-   }
-   .navbar-nav {
-      flex-direction: column;
-      align-items: center;
-   }
-   .about-img-desc {
-      margin-left: 40px;
-  margin-right: 40px;
-   }
+   
+
    .row {
       flex-direction: column;
+      gap: 10px;
    }
 }
 
 @media (max-width: 916px) {
   .about-img-desc {
+    display: flex;
       flex-direction: column;
       width: 100%;
+      align-items: center;
+      padding:0;
   }
   
  
  .about {
-  max-width: 100%;
-  margin-right: 10px;
+  
+  max-width: 85%;
  }
- .class {
-  margin-right: 10px;
+
+}
+@media (max-width: 1013px) {
+  .container {
+    flex-direction: column;
+    gap: 10px;
+   
+ }
+ .navbar-nav {
+    flex-direction: column;
+    align-items: center;
  }
 }
 
 /*work*/
 .work {
-
   display: flex;
-  align-items: center;
   flex-direction: column;
+  align-items: center;
+  padding-left: 200px;
+  padding-right: 200px;
+}
+.work1 img {
+ max-width: 100%;
+ height: auto;
 }
 /*work*/
 .works-container {
@@ -218,43 +228,36 @@ padding-top: 20px;
   margin-top: 30px;
   display: flex;
   gap: 20px;
-}
-
-.works-container img {
-  max-width: 100%;
-}
-.work1{
-  max-width: 327px;
  
 }
+
+
+
 .p1 {
   font-weight: 500;
 }
 
 @media (max-width: 1074px) {
-  .works-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
-}
-@media (max-width: 712px) {
-  .works-container {
-    grid-template-columns: 1fr;
-  }
+
+
+  
 }
 .section-head {
-  padding-top: 10px;
+  padding-top: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-bottom: 30px;
+  
  span {
   text-transform: uppercase;
   color: grey;
-  font-size: 12px;
+  font-size: 10px;
+  font-weight: 700;
  }
  h2 {
   font-size: 30px;
-  padding-bottom: 10px;
+  padding-bottom: 20px;
  }
  .line {
   border-bottom: 4px solid tomato;
@@ -265,7 +268,7 @@ padding-top: 20px;
 .red {
  
   display: flex;
- 
+  gap: 15px;
   padding-bottom: 40px;
 }
 .contact {
@@ -276,7 +279,7 @@ padding-top: 20px;
 
 .kartica-container {
   width: 33.3%;
-  border: 1px solid lightgrey;
+  border: 1px solid transparent;
   background-color: white;
   margin-right: 10px;
 }
@@ -286,8 +289,8 @@ padding-top: 20px;
   flex-direction: column;
   align-items: center;
   padding-top: 20px;
-  gap: 8px;
-  padding-bottom: 8px;
+  gap: 13px;
+  padding-bottom: 20px;
   a {
     color: grey;
     padding-top: 15px;
@@ -312,17 +315,17 @@ padding-top: 20px;
 }
 .forma {
 
-
-
   .subject {
     width: 98.5%;
-    padding: 10px 0px;
+    padding: 5px 0px;
     margin-bottom: 20px;
+    border: 0.5px solid transparent;
   }
  
   textarea {
     width: 98.5%;
     resize: none;
+    border: 0.5px solid transparent
   }
   button {
     margin-top: 15px;
@@ -340,10 +343,10 @@ padding-top: 20px;
   }
   .grouped-input {
     display:inline;
-    padding: 10px 0px;
+    padding: 5px 0px;
       width: 49%;
       margin-bottom: 20px;
-  
+     border: 0.5px solid transparent;
   }
  
 
@@ -356,7 +359,8 @@ padding-top: 20px;
 
 
 
-@media (max-width: 1084px ) {
+@media (max-width: 1084px ) { 
+ 
   .contact {
     padding-left: 15px;
     padding-right: 15px;
@@ -366,7 +370,7 @@ padding-top: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 20px;
+    gap: 40px;
   }
   .kartica-container {
     width: 100%;
@@ -390,6 +394,7 @@ padding-top: 20px;
     flex-direction: column;
   
   }
+ 
 }
 
 
@@ -479,5 +484,25 @@ padding-top: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+}
+
+@media (max-width: 600px){
+ .works-container{
+ display: block;
+ padding-left: 10px;
+ }
+ .work {
+  padding-left: 0;
+  padding-right: 0;
+ }
+
+
+}
+
+@media (max-width: 1011px) {
+  .work {
+    padding-left: 40px;
+    padding-right: 40px;
   }
 }

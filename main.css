@@ -60,9 +60,10 @@ html {
 
 .container {
   display: flex;
-  gap: 380px;
+  justify-content: space-between;
   align-items: center;
-  margin: 0 120px;
+  padding-left: 200px;
+  padding-right: 170px;
 }
 
 .navbar-nav {
@@ -116,10 +117,9 @@ nav a {
 
 .about-img-desc {
   display: flex;
-  justify-content: space-between;
-  margin-top: 30px;
-  margin-left: 200px;
-  margin-right: 200px;
+  justify-content: space-evenly;
+  padding-left: 150px;
+  padding-right: 180px;
 }
 
 .about-desc-info a {
@@ -128,7 +128,7 @@ nav a {
 
 .row {
   display: flex;
-  justify-content: space-between;
+  gap: 100px;
   flex-wrap: wrap;
 }
 
@@ -137,8 +137,12 @@ nav a {
   color: rgb(82, 79, 79);
 }
 
-.about-desc {
-  padding-right: 30px;
+.designer {
+  font-weight: 400;
+}
+
+.class {
+  padding-right: 100px;
 }
 
 .about-desc-content p {
@@ -151,6 +155,7 @@ nav a {
   display: flex;
   gap: 15px;
   padding-top: 20px;
+  padding-bottom: 40px;
 }
 
 .icon {
@@ -177,12 +182,28 @@ nav a {
 }
 
 .about {
-  flex: 0 0 50%;
-  max-width: 50%;
   padding-top: 43px;
 }
 
 @media (max-width: 1240px) {
+  .row {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+@media (max-width: 916px) {
+  .about-img-desc {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    padding: 0;
+  }
+  .about {
+    max-width: 85%;
+  }
+}
+@media (max-width: 1013px) {
   .container {
     flex-direction: column;
     gap: 10px;
@@ -191,32 +212,19 @@ nav a {
     flex-direction: column;
     align-items: center;
   }
-  .about-img-desc {
-    margin-left: 40px;
-    margin-right: 40px;
-  }
-  .row {
-    flex-direction: column;
-  }
-}
-@media (max-width: 916px) {
-  .about-img-desc {
-    flex-direction: column;
-    width: 100%;
-  }
-  .about {
-    max-width: 100%;
-    margin-right: 10px;
-  }
-  .class {
-    margin-right: 10px;
-  }
 }
 /*work*/
 .work {
   display: flex;
-  align-items: center;
   flex-direction: column;
+  align-items: center;
+  padding-left: 200px;
+  padding-right: 200px;
+}
+
+.work1 img {
+  max-width: 100%;
+  height: auto;
 }
 
 /*work*/
@@ -226,43 +234,26 @@ nav a {
   gap: 20px;
 }
 
-.works-container img {
-  max-width: 100%;
-}
-
-.work1 {
-  max-width: 327px;
-}
-
 .p1 {
   font-weight: 500;
 }
 
-@media (max-width: 1074px) {
-  .works-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
-}
-@media (max-width: 712px) {
-  .works-container {
-    grid-template-columns: 1fr;
-  }
-}
 .section-head {
-  padding-top: 10px;
+  padding-top: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-bottom: 30px;
 }
 .section-head span {
   text-transform: uppercase;
   color: grey;
-  font-size: 12px;
+  font-size: 10px;
+  font-weight: 700;
 }
 .section-head h2 {
   font-size: 30px;
-  padding-bottom: 10px;
+  padding-bottom: 20px;
 }
 .section-head .line {
   border-bottom: 4px solid tomato;
@@ -271,6 +262,7 @@ nav a {
 
 .red {
   display: flex;
+  gap: 15px;
   padding-bottom: 40px;
 }
 
@@ -281,7 +273,7 @@ nav a {
 
 .kartica-container {
   width: 33.3%;
-  border: 1px solid lightgrey;
+  border: 1px solid transparent;
   background-color: white;
   margin-right: 10px;
 }
@@ -291,8 +283,8 @@ nav a {
   flex-direction: column;
   align-items: center;
   padding-top: 20px;
-  gap: 8px;
-  padding-bottom: 8px;
+  gap: 13px;
+  padding-bottom: 20px;
 }
 .kart-tekst a {
   color: grey;
@@ -319,12 +311,14 @@ nav a {
 
 .forma .subject {
   width: 98.5%;
-  padding: 10px 0px;
+  padding: 5px 0px;
   margin-bottom: 20px;
+  border: 0.5px solid transparent;
 }
 .forma textarea {
   width: 98.5%;
   resize: none;
+  border: 0.5px solid transparent;
 }
 .forma button {
   margin-top: 15px;
@@ -343,9 +337,10 @@ nav a {
 
 .grouped-input {
   display: inline;
-  padding: 10px 0px;
+  padding: 5px 0px;
   width: 49%;
   margin-bottom: 20px;
+  border: 0.5px solid transparent;
 }
 
 .getintouch {
@@ -362,7 +357,7 @@ nav a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 20px;
+    gap: 40px;
   }
   .kartica-container {
     width: 100%;
@@ -454,6 +449,22 @@ nav a {
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+}
+@media (max-width: 600px) {
+  .works-container {
+    display: block;
+    padding-left: 10px;
+  }
+  .work {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+@media (max-width: 1011px) {
+  .work {
+    padding-left: 40px;
+    padding-right: 40px;
   }
 }
 /* endinject *//*# sourceMappingURL=main.css.map */
